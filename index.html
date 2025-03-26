@@ -6,8 +6,8 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<link rel="stylesheet" href="assets/css/fontawesome-all.min.css">
-
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+
 		<style>
 			.logo-container {
 				display: flex;
@@ -41,6 +41,55 @@
 			/* Remove bottom margins from actions stacked to reduce space */
 			#cta .actions.stacked {
 				margin-bottom: 0;
+			}
+			
+			.icons.major {
+				display: flex;
+				justify-content: center;
+				list-style: none;
+				padding: 0;
+			}
+
+			.icons.major li {
+				margin: 0 1rem;
+			}
+
+			.icons.major .icon {
+				display: flex;
+				width: 10rem;
+				justify-content: center;
+    			align-items: center;
+				height: 10rem;
+				line-height: 5rem;
+				transform: rotate(0deg);
+				text-align: center;
+				font-size: 5rem;
+				opacity: 0.75;
+				transition: opacity 0.2s ease;
+			}
+
+			.icons.major .icon span {
+				display: inline-block;
+				transform: rotate(-45deg);
+			}
+
+			.icons.major .icon.style1 {
+				background-color: rgba(87, 194, 255, 0.2);
+				color: #57c2ff;
+			}
+
+			.icons.major .icon.style2 {
+				background-color: rgba(255, 87, 87, 0.2);
+				color: #ff5757;
+			}
+
+			.icons.major .icon.style3 {
+				background-color: rgba(87, 255, 143, 0.2);
+				color: #57ff8f;
+			}
+
+			.icons.major .icon:hover {
+				opacity: 1;
 			}
 		</style>
 	</head>
@@ -90,9 +139,9 @@
 						to improve early detection and management of Polycystic Ovary Syndrome (PCOS)</p>
 					</header>
 					<ul class="icons major">
-						<li><span class="icon fa-gem major style1"><span class="label">Medical Technology</span></span></li>
-						<li><span class="icon fa-heart major style2"><span class="label">Women's Health</span></span></li>
-						<li><span class="icon solid fa-code major style3"><span class="label">Data Analysis</span></span></li>
+						<li><span class="icon major style1">💎</span></li>
+						<li><span class="icon major style2">❤️</span></li>
+						<li><span class="icon major style3">&lt;/&gt;</span></li>
 					</ul>
 				</div>
 			</section>
