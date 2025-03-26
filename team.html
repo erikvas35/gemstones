@@ -1,0 +1,407 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>AALERT-P: Team Members</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<style>
+			.logo-container {
+				display: flex;
+				align-items: center;
+				position: absolute;
+				top: 20px;
+				left: 20px;
+			}
+			.logo-container img {
+				margin-right: 10px;
+				transition: all 0.3s ease;
+				max-width: 100px;
+				max-height: 50px;
+			}
+			#header {
+				position: relative;
+			}
+			.team-grid {
+				display: grid;
+				grid-template-columns: repeat(3, 1fr);
+				gap: 30px;
+				padding: 20px;
+				margin-top: 50px;
+				justify-content: center;
+			}
+			.team-member {
+				text-align: center;
+				background: rgba(255,255,255,0.1);
+				padding: 15px;
+				border-radius: 10px;
+				transition: transform 0.3s ease;
+				position: relative;
+				overflow: hidden;
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				height: 400px; /* Fixed height to maintain consistency */
+			}
+			.team-member:hover {
+				transform: scale(1.05);
+			}
+			.team-member .img-container {
+				width: 180px;
+				height: 180px;
+				margin: 0 auto 15px;
+				overflow: hidden;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+			}
+			.team-member .img-container img {
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+				transition: filter 0.3s ease;
+			}
+			.team-member:hover .img-container img {
+				filter: brightness(50%);
+			}
+			.team-member h3 {
+				margin-bottom: 5px;
+				color: white;
+				font-size: 1.5em;
+			}
+			.team-member p {
+				color: #787878;
+				font-size: 1.2em;
+				margin-bottom: 10px;
+				white-space: nowrap;
+				overflow: hidden;
+				text-overflow: ellipsis;
+			}
+			.hover-description {
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				background: rgba(0,0,0,0.9);
+				color: white;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				opacity: 0;
+				transition: opacity 0.3s ease;
+				padding: 15px;
+				box-sizing: border-box;
+				text-align: center;
+				font-size: 0.7em;
+				overflow-y: auto;
+			}
+			.team-member:hover .hover-description {
+				opacity: 1;
+			}
+
+			/* Responsive adjustments */
+			@media screen and (max-width: 1024px) {
+				.team-grid {
+					grid-template-columns: repeat(2, 1fr);
+				}
+			}
+
+            #support-team .team-grid {
+                display: flex;
+                justify-content: center;
+                gap: 30px;
+                max-width: 1200px;
+                margin: 0 auto;
+            }
+
+            #support-team .team-member {
+                width: 300px; /* Set a fixed width to ensure consistency */
+                flex: 0 0 auto; /* Prevent flex items from growing or shrinking */
+            }
+
+            #former-members .team-grid {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 30px;
+                max-width: 1200px;
+                margin: 0 auto;
+            }
+
+            #former-members .team-member {
+                width: 300px; /* Set a fixed width to ensure consistency */
+                flex: 0 0 auto; /* Prevent flex items from growing or shrinking */
+            }
+
+        /* Center support team when fewer than 3 members */
+#support-team .team-grid {
+    justify-content: center;
+}
+		</style>
+	</head>
+	<body class="landing is-preload">
+		<div id="page-wrapper">
+			<header id="header" class="alt">
+				<div class="logo-container">
+					<img src="images/gemstones.png" alt="Left Logo">
+				</div>
+				<h1><a href="index.html">Team AALERT-P</a></h1>
+				<nav id="nav">
+					<ul>
+						<li class="special">
+							<a href="#menu" class="menuToggle"><span>Menu</span></a>
+							<div id="menu">
+								<ul>
+									<li><a href="index.html">Home</a></li>
+									<li><a href="about.html">About Us</a></li>
+									<li><a href="team.html">Team Members</a></li>
+									<li><a href="timeline.html">Research Timeline</a></li>
+									<li><a href="contact.html">Contact</a></li>
+								</ul>
+							</div>
+						</li>
+					</ul>
+				</nav>
+			</header>
+
+			<section id="team" class="wrapper style2 special">
+				<div class="inner">
+					<header class="major">
+						<h2>Team Members</h2>
+						<p>A diverse group of researchers committed to advancing PCOS detection</p>
+					</header>
+
+					<div class="team-grid">
+						<div class="team-member">
+							<div class="img-container">
+								<img src="members/Abiha.jpg" alt="Team Member 1">
+							</div>
+							<h3>Abiha Rizvi</h3>
+							<p>Team Liason and <p>
+                            <p>Ombudsperson<p>
+							<div class="hover-description">
+								Hi, my name is Abiha Rizvi, and I am an intended Biology major in
+                                cohort 2027. I initially proposed this topic to address a knowledge
+                                gap in the field, focusing on the reproductive health of
+                                underrepresented groups, particularly women of color and those
+                                from low socioeconomic backgrounds. I am mainly interested in
+                                exploring the 'why' behind the lack of a cure for PCOS. I hope you
+                                find our project intriguing and valuable.
+							</div>
+						</div>
+						<div class="team-member">
+							<div class="img-container">
+								<img src="members/Daphne.jpg" alt="Team Member 2">
+							</div>
+							<h3>Daphne Saatcioglu</h3>
+							<p>Team Liason</p>
+							<div class="hover-description">
+								I'm a Sophomore majoring in Neuroscience. It's fascinating that we have the
+                                chance to explore a disease that remains largely unknown. This is an incredible
+                                opportunity to contribute to women's health and uncover potential causes of
+                                PCOS. I'm eager to dive into this topic and support the search for a possible
+                                cure.
+							</div>
+						</div>
+						<div class="team-member">
+							<div class="img-container">
+								<img src="members/Erik.jpg" alt="Team Member 3">
+							</div>
+							<h3>Erik Vasquez</h3>
+							<p>Web Liaison</p>
+							<div class="hover-description">
+								I am a sophomore majoring in Computer Science on the
+                                Cybersecurity Track. I really love all of the aspects of our research
+                                but what really interest me is the security of our patients medical
+                                records. I think the peace of mind of knowing all of our information
+                                is secure is something I love working on and something I want to
+                                bring to our project!
+							</div>
+						</div>
+						<div class="team-member">
+							<div class="img-container">
+								<img src="members/Laura.jpeg" alt="Team Member 4">
+							</div>
+							<h3>Luara Akkurt</h3>
+							<p>Mentor Liason</p>
+							<div class="hover-description">
+								I am a sophomore majoring in Biological Sciences We explore
+                                genetics and have the opportunity to develop something new
+                                whether it's a biomarker or software. The position interests me
+                                because I am excited to organize sources of information and
+                                compile what we research as a team.
+							</div>
+						</div>
+						<div class="team-member">
+							<div class="img-container">
+								<img src="members/Maddie.jpg" alt="Team Member 5">
+							</div>
+							<h3>Maddie Odom</h3>
+							<p>Team Clerk</p>
+							<div class="hover-description">
+								I'm a sophomore criminology and criminal justice major, planning on adding
+                                computer science as a double major. I was very interested in Team AI-PCOS
+                                because I'm very passionate about spreading awareness about PCOS and am
+                                excited to try to design an app. 
+							</div>
+						</div>
+						<div class="team-member">
+							<div class="img-container">
+								<img src="members/Mackenzie.jpg" alt="Team Member 6">
+							</div>
+							<h3>Mackenzie Clopton</h3>
+							<p>Ombudsperson</p>
+							<div class="hover-description">
+								I am a sophomore civil engineering major.
+                                I was interested in Team AI-PCOS
+                                because PCOS effects a large number of
+                                individuals in the world some of which I
+                                am close with and I wanted to further the
+                                research being done, possibly find a
+                                solution for PCOS patients, and spread
+                                awareness about PCOS. 
+							</div>
+						</div>
+						<div class="team-member">
+							<div class="img-container">
+								<img src="members/Nidhi.jpg" alt="Team Member 7">
+							</div>
+							<h3>Nidhi Anne</h3>
+							<p>Library Liason</p>
+							<div class="hover-description">
+								I am a sophomore bioengineering major. I was interested in team
+                                AI-PCOS because I would like to spread awareness about PCOS
+                                and gain additional biomedical research experience. I am very
+                                excited to start work over the next couple of years!
+							</div>
+						</div>
+						<div class="team-member">
+							<div class="img-container">
+								<img src="members/Toi.jpg" alt="Team Member 8">
+							</div>
+							<h3>Toi Lyles</h3>
+							<p>Financial Liason</p>
+							<div class="hover-description">
+								I'm a sophomore dance and pre med student! I am interested in Team AI-
+                                PCOS because PCOS isn't really talked about especially as a black student and
+                                I believe more awareness should be available to help women work through
+                                PCOS and find hope through our research! 
+							</div>
+						</div>
+						<div class="team-member">
+							<div class="img-container">
+								<img src="members/Walter.jpg" alt="Team Member 9">
+							</div>
+							<h3>Walter Brown</h3>
+							<p>Social Media Liason</p>
+							<div class="hover-description">
+								Hi everyone, I'm Walter (He/They), 
+                                I'm currently studying general biology on the pre-med track in hopes of becoming a cardio-thoracic surgeon. 
+                                I'm involved a number of organizations on campus, and I worked as a certified medical assistant! I'm also a plant parent! With this team, 
+                                I have served as the social media liaison, brainstorming ideas + ways to communicate our equitable mission in a media-friendly manner! 
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section id="support-team" class="wrapper style2 special">
+				<div class="inner">
+					<header class="major">
+						<h2>Support Team</h2>
+						<p>Dedicated mentors and support staff who guide our research</p>
+					</header>
+
+					<div class="team-grid">
+						<div class="team-member">
+							<div class="img-container">
+								<img src="members/EricH.jpg" alt="Team Mentor">
+							</div>
+							<h3>Dr. Eric Haag</h3>
+							<p>Research Mentor<br>Biological Sciences</p>
+							<div class="hover-description">
+								Research mentor guiding the team's scientific approach and providing 
+								expertise in biological sciences to support the PCOS research project.
+							</div>
+						</div>
+						<div class="team-member">
+							<div class="img-container">
+								<img src="members/Norton.png" alt="Team Librarian">
+							</div>
+							<h3>Brynne Norton</h3>
+							<p>Research Librarian<br>Information Specialist</p>
+							<div class="hover-description">
+								Information specialist supporting the team's research efforts 
+								by providing critical resources, research guidance, and academic 
+								support throughout the project.
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section id="former-members" class="wrapper style2 special">
+				<div class="inner">
+					<header class="major">
+						<h2>Former Team Members</h2>
+						<p>Acknowledging the valuable contributions of our past researchers</p>
+					</header>
+
+					<div class="team-grid">
+						<div class="team-member">
+							<div class="img-container">
+								<img src="members/Sophia.png" alt="Former Member 1">
+							</div>
+							<h3>Sophia Jones</h3>
+							<p>Former Team Liason</p>
+							<div class="hover-description">
+								Former team liaison who contributed to the early stages 
+								of the PCOS research project and helped establish the 
+								team's initial research framework.
+							</div>
+						</div>
+						<div class="team-member">
+							<div class="img-container">
+								<img src="members/Minjee.jpeg" alt="Former Member 2">
+							</div>
+							<h3>Minjee Yi</h3>
+							<p>Former Social Media Liason</p>
+							<div class="hover-description">
+								Previous social media liaison who helped raise awareness 
+								about the project and PCOS through digital platforms.
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section id="cta" class="wrapper style4">
+				<div class="inner">
+					<header>
+						<h2>Collaborate With Us</h2>
+						<p>Interested in our research or potential collaboration?</p>
+					</header>
+					<ul class="actions stacked">
+						<li><a href="contact.html" class="button fit">Contact Us!</a></li>
+					</ul>
+				</div>
+			</section>
+
+			<footer id="footer">
+				<ul class="copyright">
+					<li>&copy; AALERT-P Research Team</li>
+				</ul>
+			</footer>
+		</div>
+
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/jquery.scrollex.min.js"></script>
+		<script src="assets/js/jquery.scrolly.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
+	</body>
+</html>

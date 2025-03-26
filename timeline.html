@@ -1,0 +1,266 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>AALERT-P: Research Timeline</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<style>
+			body {
+				background-color: #02214C; /* Dark navy color */
+			}
+
+			#banner .inner h2 {
+				font-size: 3em;
+			}
+
+			#banner .inner p {
+				font-size: 1.5em;
+				line-height: 1.6;
+			}
+
+			.logo-container {
+				display: flex;
+				align-items: center;
+				position: absolute;
+				top: 20px;
+				left: 20px;
+			}
+			.logo-container img {
+				margin-right: 10px;
+				transition: all 0.3s ease;
+				max-width: 100px;
+				max-height: 50px;
+			}
+
+			.timeline {
+				position: relative;
+				max-width: 1200px;
+				margin: 0 auto;
+				padding: 40px 0;
+			}
+
+			.timeline .outer {
+				position: relative;
+				max-width: 1000px;
+				margin: 0 auto;
+			}
+
+			.timeline .outer::before {
+				content: '';
+				position: absolute;
+				width: 6px;
+				background-color: #ffffff4d; /* Semi-transparent white for visibility */
+				top: 0;
+				bottom: 0;
+				left: 50%;
+				margin-left: -3px;
+			}
+
+			.card {
+				padding: 10px 40px;
+				position: relative;
+				background-color: transparent;
+				width: 50%;
+			}
+
+			.card::after {
+				content: '';
+				position: absolute;
+				width: 25px;
+				height: 25px;
+				right: -17px;
+				background-color: #ffffff;
+				border: 4px solid #ffffff;
+				top: 15px;
+				border-radius: 50%;
+				z-index: 1;
+			}
+
+			.card:nth-child(odd) {
+				left: 0;
+			}
+
+			.card:nth-child(even) {
+				left: 50%;
+			}
+
+			.card:nth-child(odd)::before {
+				content: " ";
+				height: 0;
+				position: absolute;
+				top: 22px;
+				width: 0;
+				z-index: 1;
+				right: 30px;
+				border: medium solid #ffffff;
+				border-width: 10px 0 10px 10px;
+				border-color: transparent transparent transparent #ffffff;
+			}
+
+			.card:nth-child(even)::before {
+				content: " ";
+				height: 0;
+				position: absolute;
+				top: 22px;
+				width: 0;
+				z-index: 1;
+				left: 30px;
+				border: medium solid #ffffff;
+				border-width: 10px 10px 10px 0;
+				border-color: transparent #ffffff transparent transparent;
+			}
+
+			.card:nth-child(even)::after {
+				left: -16px;
+			}
+
+			.card .info {
+				padding: 20px 30px;
+				background-color: #ffffff;
+				position: relative;
+				border-radius: 6px;
+			}
+
+			.card .info h3 {
+				margin-top: 0;
+				color: #02214C;
+			}
+
+			.card .info p {
+				color: #02214C;
+			}
+
+            #main.wrapper.style1 {
+                background-color: #02214C;
+            }
+
+			@media screen and (max-width: 600px) {
+				.timeline .outer::before {
+					left: 31px;
+				}
+
+				.card {
+					width: 100%;
+					padding-left: 70px;
+					padding-right: 25px;
+				}
+
+				.card:nth-child(even) {
+					left: 0%;
+				}
+
+				.card::before {
+					left: 60px;
+					border: medium solid #ffffff;
+					border-width: 10px 10px 10px 0;
+					border-color: transparent #ffffff transparent transparent;
+				}
+
+				.card::after {
+					left: 15px;
+				}
+			}
+		</style>
+	</head>
+	<body class="landing is-preload">
+		<div id="page-wrapper">
+			<header id="header" class="alt">
+				<div class="logo-container">
+					<img src="images/gemstones.png" alt="Left Logo">
+				</div>
+				<h1><a href="index.html">Team AALERT-P</a></h1>
+				<nav id="nav">
+					<ul>
+						<li class="special">
+							<a href="#menu" class="menuToggle"><span>Menu</span></a>
+							<div id="menu">
+								<ul>
+									<li><a href="index.html">Home</a></li>
+									<li><a href="about.html">About Us</a></li>
+									<li><a href="team.html">Team Members</a></li>
+									<li><a href="timeline.html">Research Timeline</a></li>
+									<li><a href="contact.html">Contact</a></li>
+								</ul>
+							</div>
+						</li>
+					</ul>
+				</nav>
+			</header>
+
+			<section id="banner">
+				<div class="inner">
+					<h2>Research Timeline</h2>
+					<p>A Journey of Discovery and Innovation</p>
+				</div>
+				<a href="#main" class="more scrolly">Learn More</a>
+			</section>
+
+			<section id="main" class="wrapper style1">
+				<div class="inner">
+					<div class="timeline">
+						<div class="outer">
+							<div class="card">
+								<div class="info">
+									<h3 class="title">Project Inception</h3>
+									<p>Initial research concept developed. Team formation and preliminary literature review begins.</p>
+								</div>
+							</div>
+							<div class="card">
+								<div class="info">
+									<h3 class="title">Data Collection Phase</h3>
+									<p>Comprehensive data gathering from medical databases and research partnerships. Initial data preprocessing and cleaning.</p>
+								</div>
+							</div>
+							<div class="card">
+								<div class="info">
+									<h3 class="title">Machine Learning Model Development</h3>
+									<p>Begin developing and training initial machine learning models for PCOS detection. Iterative model refinement starts.</p>
+								</div>
+							</div>
+							<div class="card">
+								<div class="info">
+									<h3 class="title">Model Validation</h3>
+									<p>Comprehensive model testing and validation with medical expert review. Performance metrics analysis.</p>
+								</div>
+							</div>
+							<div class="card">
+								<div class="info">
+									<h3 class="title">Preliminary Results</h3>
+									<p>Initial research findings prepared for academic conference submission.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section id="cta" class="wrapper style4">
+				<div class="inner">
+					<header>
+						<h2>Stay Informed</h2>
+						<p>Follow our progress and latest developments in PCOS detection research.</p>
+					</header>
+					<ul class="actions stacked">
+						<li><a href="contact.html" class="button fit">Contact Us!</a></li>
+					</ul>
+				</div>
+			</section>
+
+			<footer id="footer">
+				<ul class="copyright">
+					<li>&copy; AALERT-P Research Team</li>
+				</ul>
+			</footer>
+		</div>
+
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/jquery.scrollex.min.js"></script>
+		<script src="assets/js/jquery.scrolly.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
+	</body>
+</html>
